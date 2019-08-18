@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.dao.DiaryDao">
+
+    <insert id="add" parameterType="diary">
+        insert into diary(title,desc1,xq) values (#{title},#{desc1},#{xq});
+    </insert>
+</mapper>

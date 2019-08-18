@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.dao.DiaDao">
+    <resultMap id="diaMap" type="com.qfedu.entity.Dia">
+        <id column="id" property="id"></id>
+        <result column="title" property="title"></result>
+        <result column="sort" property="sort"></result>
+        <result column="date" property="date"></result>
+    </resultMap>
+
+    <select id="find" resultMap="diaMap">
+        select * from list
+    </select>
+</mapper>
